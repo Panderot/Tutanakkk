@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f3f6f9;
+  --ink: #1c2733;
+  --muted: #5d6b7a;
+  --accent: #3a5068;
+  --hi: #6aa5d8;
+  --panel: #ffffff;
+  --line: #dbe3ec;
+}
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+.font-display { font-family: var(--font-display), Georgia, serif; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--accent); color: #fff; border-radius: 999px;
+  padding: 14px 28px; font-weight: 600; transition: opacity .15s;
+}
+.btn:hover { opacity: .9; }
+.btn-ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; }
